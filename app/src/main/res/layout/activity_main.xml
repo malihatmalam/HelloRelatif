@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_top_bottom"
+    android:paddingBottom="@dimen/activity_top_bottom"
+    android:paddingRight="@dimen/activity_right_left"
+    android:paddingLeft="@dimen/activity_right_left"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/ButtonToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:onClick="ShowToast"
+        android:text="@string/Button_Toast"
+        android:textColor="@color/color_Text_Button"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Show_Count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toEndOf="@+id/ButtonToast"
+        android:layout_toRightOf="@+id/ButtonToast"
+        android:background="@color/color_Background_Text_Count"
+        android:gravity="center"
+        android:text="@string/View_Text_Count"
+        android:textColor="@color/color_Text_Count"
+        android:textSize="180sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/activity_right_left" />
+
+    <Button
+
+        android:id="@+id/ButtonCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ButtonToast"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_top_bottom"
+        android:background="@color/colorPrimary"
+        android:onClick="ShowCount"
+        android:text="@string/Button_Count"
+        android:textColor="@color/color_Text_Button"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
